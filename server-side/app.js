@@ -13,7 +13,7 @@ app.use(cookieParser());
 
 app.use(express.json());
 
-const allowedOrigins = ["http://localhost:3001", "http://localhost:3000", "bin-there-dumped-that.vercel.app", "bin-there-dumped-that-git-master-caleb05wgmailcoms-projects.vercel.app", "bin-there-dumped-that-gdjgzw5u7-caleb05wgmailcoms-projects.vercel.app",];
+const allowedOrigins = ["http://localhost:3001", "http://localhost:3000", "https://bin-there-dumped-that.vercel.app", "https://bin-there-dumped-that-git-master-caleb05wgmailcoms-projects.vercel.app", "https://bin-there-dumped-that-gdjgzw5u7-caleb05wgmailcoms-projects.vercel.app",];
 
 app.use(
   cors({
