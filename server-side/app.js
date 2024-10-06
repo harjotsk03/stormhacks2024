@@ -22,6 +22,13 @@ app.use(
   })
 );
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "https://bin-there-dumped-that.vercel.app"/);
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+  next();
+});
+
 mongoose
   .connect(process.env.MONGO_URI, {})
   .then(() => console.log("Connected to MongoDB"))
