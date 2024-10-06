@@ -13,7 +13,7 @@ app.use(cookieParser());
 
 app.use(express.json());
 
-const allowedOrigins = ["http://localhost:3001", "http://localhost:3000"];
+const allowedOrigins = ["http://localhost:3001", "http://localhost:3000", "bin-there-dumped-that.vercel.app"];
 
 app.use(
   cors({
